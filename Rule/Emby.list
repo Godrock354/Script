@@ -1,5 +1,5 @@
 # > NAME: Emby
-# > UPDATED: 2022-12-4
+# > UPDATED: 2023-1-2
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
@@ -26,6 +26,7 @@ DOMAIN,misty.ltd
 
 # > MisakaF服务器
 DOMAIN,cf.misakaf.org
+DOMAIN,he.misakaf.org
 DOMAIN,4837.misakaf.org
 
 # > Froghub服务器
@@ -33,13 +34,6 @@ DOMAIN,178.173.230.8
 
 # > Singularity服务器
 DOMAIN,singularity.deja-vu.beauty
-
-# > BlueSeaMusic音乐服
-DOMAIN,jp.blueseamusicbox.best
-DOMAIN,blueseamusics.com
-
-# > BlueSea服务器
-DOMAIN,emby-pub1.blueseacdn.com
 
 # > CC服务器
 DOMAIN,cc.ccemby.tk
@@ -56,7 +50,6 @@ DOMAIN,embytv.cf
 
 # > Peach服务器
 DOMAIN,embymv.tk
-DOMAIN,sg.embymv.tk
 DOMAIN,jp.embymv.tk
 DOMAIN,kr.embymv.tk
 DOMAIN,us.embymv.tk

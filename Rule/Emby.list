@@ -1,0 +1,62 @@
+# > NAME: Emby
+# > UPDATED: 2022-12-4
+
+# > Odyssey+服务器
+DOMAIN,cf.odysseyplus.site
+DOMAIN,us.odysseyplus.site
+DOMAIN,kr.odysseyplus.site
+DOMAIN,jp.odysseyplus.site
+DOMAIN,jp2.odysseyplus.site
+
+# > Nebula服务器
+DOMAIN,direct.nebula-emby.com
+
+# > 终点站服务器
+DOMAIN,pub1.emby.wtf
+DOMAIN,pub2.emby.wtf
+DOMAIN,pub3.emby.wtf
+DOMAIN,pub4.emby.wtf
+
+# > 卷毛鼠服务器
+DOMAIN,cf.jmsooo.com
+DOMAIN,ha.jmsooo.com
+
+# > Misty服务器
+DOMAIN,misty.ltd
+
+# > MisakaF服务器
+DOMAIN,cf.misakaf.org
+DOMAIN,4837.misakaf.org
+
+# > Froghub服务器
+DOMAIN,178.173.230.8
+
+# > Singularity服务器
+DOMAIN,singularity.deja-vu.beauty
+
+# > BlueSeaMusic音乐服
+DOMAIN,jp.blueseamusicbox.best
+DOMAIN,blueseamusics.com
+
+# > BlueSea服务器
+DOMAIN,emby-pub1.blueseacdn.com
+
+# > CC服务器
+DOMAIN,cc.ccemby.tk
+
+# > MJJEMBY服务器
+DOMAIN,de.mjjemby.org
+DOMAIN,cf.mjjemby.org
+DOMAIN,sg01.mjjemby.org
+DOMAIN,jp01.mjjemby.org
+DOMAIN,kr02.mjjemby.org
+
+# > Orange服务器
+DOMAIN,embytv.cf
+
+# > Peach服务器
+DOMAIN,embymv.tk
+DOMAIN,sg.embymv.tk
+DOMAIN,jp.embymv.tk
+DOMAIN,kr.embymv.tk
+DOMAIN,us.embymv.tk

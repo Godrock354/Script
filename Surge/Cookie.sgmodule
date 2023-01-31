@@ -1,13 +1,12 @@
 #!name=重写获取
-#!desc=Update-2023.1.21
+#!desc=Update-2023.1.31
 #!system=ios
 
 [Script]
 # > 京东Cookie 登陆 https://home.m.jd.com/myJd/newhome.action 或旧版网址 https://bean.m.jd.com/bean/signIndex.action
-# > 获取京东Cookie
 京东Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-# > 京东wskey boxjs订阅https://raw.githubusercontent.com/chiupam/surge/main/boxjs/chiupam.boxjs.json
-京东wskey = type=http-request, pattern=^https:\/\/api\-dd\.jd\.com\/client\.action\?functionId=getSessionLog, requires-body=1, max-size=-1, script-path=https://raw.githubusercontent.com/chiupam/surge/main/scripts/javascripts/wskey.js
+# > 京东wskey app获取
+京东WSKEY = type=http-request,pattern=^https:\/\/api\-dd\.jd\.com\/client\.action\?functionId=getSessionLog,requires-body=0,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_jd_wskey.js,script-update-interval=0
 # > 小米运动 app登陆时获取
 小米运动 = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/githubdulong/Script/master/xmSports.js
 # > 美团 app签到获取
@@ -15,8 +14,6 @@
 # > 哔哩哔哩 app或网页 https://www.bilibili.com/
 哔哩哔哩 = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/resource\/domain\?,script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js
 哔哩哔哩 = type=http-request,pattern=^https:\/\/m.bilibili.com/$,script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/BiliBili.js
-# > 微博推送 登陆 https://m.weibo.cn 获取
-微博推送 = type=http-request,pattern=^https:\/\/m\.weibo\.cn\/feed\/,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js
 # > 爱奇艺 登陆 https://m.iqiyi.com/user.html
 奇艺获取 = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 # > 吾爱破解 登陆 https://www.52pojie.cn/home.php
@@ -27,6 +24,8 @@
 贴吧获取 = type=http-request,pattern=^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js
 # > 喜马拉雅 app获取（获取不到ck可以尝试切换网络）
 喜马拉雅 = script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js,requires-body=0,type=http-request,pattern=^https?:\/\/mobile\.ximalaya\.com\/app-skin-service\/skin\/
+# > 交管12123 支付宝小程序获取
+交管12123 = type=http-request,pattern=^https:\/\/miniappcsfw\.122\.gov\.cn:8443\/openapi\/invokeApi\/business\/biz,requires-body=1,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_12123_token.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, api-dd.jd.com, account.huami.com, i.meituan.com, app.bilibili.com, m.bilibili.com, m.weibo.cn, passport.iqiyi.com, www.52pojie.cn, c.tieba.baidu.com, tiebac.baidu.com, mobile.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64
+hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, api-dd.jd.com, account.huami.com, i.meituan.com, app.bilibili.com, m.bilibili.com, passport.iqiyi.com, www.52pojie.cn, c.tieba.baidu.com, tiebac.baidu.com, mobile.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, miniappcsfw.122.gov.cn:8443, miniappcsfw.122.gov.cn

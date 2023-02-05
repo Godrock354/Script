@@ -1,5 +1,5 @@
 #!name=定时脚本
-#!desc=Update-2023.1.21
+#!desc=Update-2023.2.6
 #!system=ios
 
 [Script]
@@ -15,12 +15,8 @@
 百度贴吧 = type=cron,cronexp=0 2 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js,script-update-interval=0
 # > 京东物流
 京东物流 = type=cron,cronexp=30 0 12 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js,script-update-interval=0
-# > 新浪微博
-//微博推送= type=cron,cronexp="0 0 */9-21 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Weibo/Weibo.js,script-update-interval=0
 # > 每日一句
 每日一句 = type=cron,cronexp=8 8 8 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/One.js,script-update-interval=0
-# > 爱奇艺
-iQIYI签到 = type=cron,cronexp=30 4 0 * * *,wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,script-update-interval=0
 # > 吾爱破解
 吾爱签到 = type=cron,cronexp=0 5 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
 # > Gist备份+恢复

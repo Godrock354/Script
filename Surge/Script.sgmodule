@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.2.7
+#!desc=Update-2023.2.8
 #!system=ios
 
 [Header Rewrite]
@@ -51,7 +51,7 @@ DOMAIN-SUFFIX,applvn.com,REJECT
 ^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 
 [Script]
-# > Spark 解锁、Forza Football解锁
+# > Spark 解锁、Forza Football解锁 api.revenuecat.com
 通用解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/revenuecat.js,script-update-interval=-1
 # > 京东App 历史价格 
 京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
@@ -127,4 +127,4 @@ Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/
 //格式转换 https://raw.githubusercontent.com/chengkongyiban/Surge/main/modules/QX_to_Surge.sgmodule
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, ap?.bili*i.com, ap?.bili*i.net, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, bmall.camera360.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, biz.caiyunapp.com, m.douban.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, boxjs.net, boxjs.com, *account.wps.cn, *account.wps.com, mb3admin.com, nomo.dafork.com, user-kaji-api.b612kaji.com, buy.itunes.apple.com, restore-access.indream.app, api.revenuecat.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, ap?.bili*i.com, ap?.bili*i.net, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, bmall.camera360.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, biz.caiyunapp.com, m.douban.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, boxjs.net, boxjs.com, *account.wps.cn, *account.wps.com, mb3admin.com, nomo.dafork.com, user-kaji-api.b612kaji.com, buy.itunes.apple.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com

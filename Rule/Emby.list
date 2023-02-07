@@ -1,5 +1,5 @@
 # > NAME: Emby
-# > UPDATED: 2023-1-2
+# > UPDATED: 2023-2-7
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
@@ -53,3 +53,6 @@ DOMAIN,embymv.tk
 DOMAIN,jp.embymv.tk
 DOMAIN,kr.embymv.tk
 DOMAIN,us.embymv.tk
+
+# > BlueSea服务器
+DOMAIN,bsem.ddns.me

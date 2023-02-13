@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.2.8
+#!desc=Update-2023.2.13
 #!system=ios
 
 [Header Rewrite]
@@ -11,6 +11,10 @@ https:\/\/api\.revenuecat\.com header-del x-revenuecat-etag
 force-http-engine-hosts = %APPEND% boxjs.net, boxjs.com, *.example.com:0
 
 [Rule]
+# > ChatGPT 代理 
+DOMAIN-SUFFIX,openai.com,Singapore
+DOMAIN,cdn.auth0.com,Singapore
+DOMAIN,openaiapi-site.azureedge.net,Singapore
 # > Boom Beach
 DOMAIN,gamec.boombeachgame.com,Proxy
 DOMAIN,ingame.id.supercell.com,Proxy

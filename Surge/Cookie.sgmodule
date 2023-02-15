@@ -1,11 +1,11 @@
 #!name=重写获取
-#!desc=Update-2023.2.7
+#!desc=Update-2023.2.15
 #!system=ios
 
 [Script]
 # > 京东Cookie 登陆 https://home.m.jd.com/myJd/newhome.action 或旧版网址 https://bean.m.jd.com/bean/signIndex.action
 京东 Cookie = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-# > 京东wskey app获取
+# > 京东Wskey app获取
 京东 WSKEY = type=http-request,pattern=^https:\/\/api\-dd\.jd\.com\/client\.action\?functionId=getSessionLog,requires-body=0,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_jd_wskey.js,script-update-interval=0
 # > 小米运动 app登陆时获取
 小米运动 = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/githubdulong/Script/master/xmSports.js
@@ -22,10 +22,8 @@
 贴吧获取 = type=http-request,pattern=^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js
 # > 喜马拉雅 app获取（获取不到ck可以尝试切换网络）
 喜马拉雅 = script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js,requires-body=0,type=http-request,pattern=^https?:\/\/mobile\.ximalaya\.com\/app-skin-service\/skin\/
-# > 交管12123 支付宝小程序获取
-交管12123 = type=http-request,pattern=^https:\/\/miniappcsfw\.122\.gov\.cn:8443\/openapi\/invokeApi\/business\/biz,requires-body=1,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_12123_token.js,script-update-interval=0
 # > 阿里云盘 app获取
 阿里云盘 = requires-body=1,type=http-response,pattern=https:\/\/auth.aliyundrive.com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
 
 [MITM]
-hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, api-dd.jd.com, account.huami.com, i.meituan.com, app.bilibili.com, m.bilibili.com, www.52pojie.cn, c.tieba.baidu.com, tiebac.baidu.com, mobile.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, miniappcsfw.122.gov.cn:8443, miniappcsfw.122.gov.cn, auth.aliyundrive.com
+hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, api-dd.jd.com, account.huami.com, i.meituan.com, app.bilibili.com, m.bilibili.com, www.52pojie.cn, c.tieba.baidu.com, tiebac.baidu.com, mobile.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.aliyundrive.com

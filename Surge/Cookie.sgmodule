@@ -26,4 +26,4 @@
 阿里云盘 = requires-body=1,type=http-response,pattern=https:\/\/auth.aliyundrive.com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
 
 [MITM]
-hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, api-dd.jd.com, account.huami.com, i.meituan.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, c.tieba.baidu.com, tiebac.baidu.com, mobile.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.aliyundrive.com
+hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, api-dd.jd.com, account.huami.com, i.meituan.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, c.tieba.baidu.com, tiebac.baidu.com, mobile.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.aliyundrive.com 

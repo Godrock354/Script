@@ -1,5 +1,5 @@
 #!name=定时脚本
-#!desc=Update-2023.2.16
+#!desc=Update-2023.2.22
 #!system=ios
 
 [Script]
@@ -15,8 +15,8 @@
 百度贴吧 = type=cron,cronexp=0 2 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js,script-update-interval=0
 # > 京东物流
 京东物流 = type=cron,cronexp=30 0 12 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js,script-update-interval=0
-# > 每日一句
-每日一句 = type=cron,cronexp=8 8 8 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/One.js,script-update-interval=0
+# > 今日黄历
+今日黄历 = type=cron,cronexp=8 8 8 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/wnCalendar.js,script-update-interval=0,timeout=30
 # > 捷停车
 捷顺停车 = type=cron,cronexp=0 5 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, script-update-interval=0
 # > Gist备份+恢复

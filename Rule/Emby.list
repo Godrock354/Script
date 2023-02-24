@@ -1,5 +1,5 @@
 # > NAME: Emby
-# > UPDATED: 2023-2-7
+# > UPDATED: 2023-2-25
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
@@ -26,8 +26,7 @@ DOMAIN,misty.ltd
 
 # > MisakaF服务器
 DOMAIN,cf.misakaf.org
-DOMAIN,he.misakaf.org
-DOMAIN,4837.misakaf.org
+DOMAIN,cdn.misakaf.org
 
 # > Froghub服务器
 DOMAIN,178.173.230.8
@@ -46,13 +45,13 @@ DOMAIN,jp01.mjjemby.org
 DOMAIN,kr02.mjjemby.org
 
 # > Orange服务器
-DOMAIN,embytv.cf
+DOMAIN,cf.embytv.cf
+DOMAIN,cdn.embytv.cf
 
 # > Peach服务器
 DOMAIN,embymv.tk
 DOMAIN,jp.embymv.tk
 DOMAIN,kr.embymv.tk
-DOMAIN,us.embymv.tk
 
 # > BlueSea服务器
 DOMAIN,bsem.ddns.me

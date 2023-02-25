@@ -1,5 +1,5 @@
 #!name=定时脚本
-#!desc=Update-2023.2.22
+#!desc=Update-2023.2.25
 #!system=ios
 
 [Script]
@@ -27,7 +27,7 @@
 # > 账户检测
 帐户检测 = type=cron,cronexp="0 36 5,11,17,23 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/jd/jd_cookie_search.js,script-update-interval=0,timeout=60
 # > SUB 订阅同步
-订阅同步 = type=cron,cronexp="15 0 20 * * *",script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js,script-update-interval=0,wake-system=1,timeout=60
+订阅同步 = type=cron,cronexp=15 0 20 * * *,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js,script-update-interval=0,wake-system=1,timeout=60
 # > 喜马拉雅
 喜马拉雅 = type=cron,cronexp=30 0 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js,script-update-interval=0,timeout=30
 # > 威锋论坛

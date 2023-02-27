@@ -31,9 +31,6 @@ DOMAIN,cdn.misakaf.org
 # > Froghub服务器
 DOMAIN,178.173.230.8
 
-# > Singularity服务器
-DOMAIN,singularity.deja-vu.beauty
-
 # > CC服务器
 DOMAIN,cc.ccemby.tk
 

@@ -1,5 +1,5 @@
 # > NAME: Emby
-# > UPDATED: 2023-2-25
+# > UPDATED: 2023-3-8
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
@@ -52,3 +52,7 @@ DOMAIN,kr.embymv.tk
 
 # > BlueSea服务器
 DOMAIN,bsem.ddns.me
+
+# > 23 STUDIOA服务器
+DOMAIN,21S.CASACAM.NET
+DOMAIN,188.172.228.49

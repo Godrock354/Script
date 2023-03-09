@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.3.3
+#!desc=Update-2023.3.9
 #!system=ios
 
 [Header Rewrite]
@@ -32,8 +32,6 @@ PROCESS-NAME,Transmission,DIRECT
 PROCESS-NAME,uTorrent,DIRECT
 PROCESS-NAME,WebTorrent,DIRECT
 PROCESS-NAME,WebTorrent Helper,DIRECT
-# > lnfuse 账户验证
-DOMAIN,api.trakt.tv,REJECT
 # > VSCO 代理
 DOMAIN,measurement.com,Proxy
 # > Safari 防跳转

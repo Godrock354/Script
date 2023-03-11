@@ -24,7 +24,7 @@
 // > https://raw.githubusercontent.com/Godrock354/Script/main/JavaScript/Surge/rename.js#input=enShort&output=zh&airport=[你需要的机场名]
 // > 两位英文简写改为英文简写（例：HK=>HK）
 // > https://raw.githubusercontent.com/Godrock354/Script/main/JavaScript/Surge/rename.js#input=enShort&output=enShort&airport=[你需要的机场名]
-// > 两位英文简写改为三位英文简写（例：香港=>HKG）
+// > 两位英文简写改为三位英文简写（例：HK=>HKG）
 // > https://raw.githubusercontent.com/Godrock354/Script/main/JavaScript/Surge/rename.js#input=enShort&output=enShort3&airport=[你需要的机场名]
 // > 两位英文简写改为英文全称（例：HK=>Hong Kong）
 // > https://raw.githubusercontent.com/Godrock354/Script/main/JavaScript/Surge/rename.js#input=enShort&output=enFull&airport=[你需要的机场名]

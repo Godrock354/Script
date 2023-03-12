@@ -1,5 +1,5 @@
 # > NAME: Emby
-# > UPDATED: 2023-3-8
+# > UPDATED: 2023-3-12
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
@@ -56,3 +56,6 @@ DOMAIN,bsem.ddns.me
 # > 23 STUDIOA服务器
 DOMAIN,21S.CASACAM.NET
 DOMAIN,188.172.228.49
+
+# > Mulgore服务器
+DOMAIN,202.61.255.248

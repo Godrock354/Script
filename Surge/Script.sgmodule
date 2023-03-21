@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.3.20
+#!desc=Update-2023.3.22
 #!system=ios
 
 [Header Rewrite]
@@ -13,6 +13,8 @@ https:\/\/api\.revenuecat\.com header-del x-revenuecat-etag
 force-http-engine-hosts = %APPEND% boxjs.net, boxjs.com, *.example.com:0
 
 [Rule]
+# > Bard 代理
+DOMAIN,bard.google.com,United States
 # > ChatGPT 代理 
 DOMAIN-SUFFIX,openai.com,Singapore
 DOMAIN,cdn.auth0.com,Singapore

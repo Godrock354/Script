@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.3.30
+#!desc=Update-2023.4.4
 #!system=ios
 
 [Header Rewrite]
@@ -17,8 +17,11 @@ force-http-engine-hosts = %APPEND% boxjs.net, boxjs.com, *.example.com:0
 DOMAIN,bard.google.com,United States
 # > ChatGPT 代理 
 DOMAIN-SUFFIX,openai.com,Singapore
+DOMAIN-SUFFIX,ai.com,Singapore
 DOMAIN,cdn.auth0.com,Singapore
 DOMAIN,openaiapi-site.azureedge.net,Singapore
+DOMAIN-SUFFIX,identrust.com,Singapore
+DOMAIN,challenges.cloudflare.com,Singapore
 # > Boom Beach
 DOMAIN,gamec.boombeachgame.com,Proxy
 DOMAIN,ingame.id.supercell.com,Proxy

@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.4.4
+#!desc=Update-2023.4.5
 #!system=ios
 
 [Header Rewrite]
@@ -25,8 +25,6 @@ DOMAIN,challenges.cloudflare.com,Singapore
 # > Boom Beach
 DOMAIN,gamec.boombeachgame.com,Proxy
 DOMAIN,ingame.id.supercell.com,Proxy
-# > WARP
-OR,((IP-CIDR,1.1.1.1/32,no-resolve),(IP-CIDR6,2606:4700:4700::1111/128,no-resolve), (DOMAIN-SUFFIX,zero-trust-client.cloudflareclient.com)),Proxy
 # > Client (仅 macOS)
 PROCESS-NAME,UUBooster,DIRECT
 # > Download (仅 macOS)

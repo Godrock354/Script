@@ -1,5 +1,5 @@
 #!name=定时脚本
-#!desc=Update-2023.3.11
+#!desc=Update-2023.4.10
 #!system=ios
 
 [Script]
@@ -35,4 +35,4 @@
 # > 顺丰速运
 顺丰速运 = type=cron,cronexp=30 6 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js,script-update-interval=0,timeout=30
 # > Bing积分
-Bing积分 = type=cron,cronexp="0/15 7 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js,timeout=30
+Bing积分 = type=cron,cronexp=0 7 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js,timeout=30

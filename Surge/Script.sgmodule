@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.4.10
+#!desc=Update-2023.4.13
 #!system=ios
 
 [Header Rewrite]
@@ -71,9 +71,6 @@ EmbyPro = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/r
 # > 新浪微博 去广告
 微博广告 = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js,type=http-response,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua)
 微博广告 = type=http-response,requires-body=1,max-size=-1,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list),script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
-# > bilbii 换区、评分
-哔哩换区 = type=http-response,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/offline\/version)\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
-哔哩搜索 = type=http-request,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
 # > 扫描全能王 pro
 全能扫描 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/camscanner.js,type=http-response,pattern=https:\/\/(api|api-cs)*\.intsig\.net\/purchase\/cs\/query_property\?,script-update-interval=0
 # > Dayone vip
@@ -119,6 +116,9 @@ Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/
 //模块更新捷径 https://www.icloud.com/shortcuts/67c3ace4fb3a4f9ebbe8d3184cd82e39
 //QX转换的模块更新捷径 https://www.icloud.com/shortcuts/0dced4438f09432ca7b22757ba861eb5
 //格式转换 https://raw.githubusercontent.com/chengkongyiban/Surge/main/modules/QX_to_Surge.sgmodule
+//WARP配置 https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/sgmodule/Cloudflare.1.1.1.1.sgmodule
+//哔哩哔哩自定义 https://github.com/BiliUniverse/Enhanced/raw/main/modules/BiliBili.Enhanced.sgmodule
+//哔哩哔哩换区 https://github.com/BiliUniverse/Global/raw/main/modules/BiliBili.Global.sgmodule
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, ap?.bili*i.com, ap?.bili*i.net, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, bmall.camera360.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, boxjs.net, boxjs.com, mb3admin.com, buy.itunes.apple.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.bing.com
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, bmall.camera360.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, boxjs.net, boxjs.com, mb3admin.com, buy.itunes.apple.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.bing.com

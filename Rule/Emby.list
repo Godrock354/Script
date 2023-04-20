@@ -30,13 +30,6 @@ DOMAIN,178.173.230.8
 # > CC服务器
 DOMAIN,cc.ccemby.tk
 
-# > MJJEMBY服务器
-DOMAIN,de.mjjemby.org
-DOMAIN,cf.mjjemby.org
-DOMAIN,sg01.mjjemby.org
-DOMAIN,jp01.mjjemby.org
-DOMAIN,kr02.mjjemby.org
-
 # > Orange服务器
 DOMAIN,cf.embytv.cf
 DOMAIN,cdn.embytv.cf

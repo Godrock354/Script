@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.4.13
+#!desc=Update-2023.4.23
 #!system=ios
 
 [Header Rewrite]
@@ -39,14 +39,6 @@ DOMAIN-KEYWORD,jsdelivr.net,Proxy
 # > HDOBOX 去广告
 DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,applvn.com,REJECT
-
-[URL Rewrite]
-# > TikTok 换区
-# > (更换307前面JP JP=日本 KR=韩国 HK=香港 US=美国）
-(?<=&mcc_mnc=)4 2 307
-(?<=_region=)CN(?=&) JP 307
-(^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
-^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 
 [Script]
 # > Spark 解锁、Forza Football解锁 api.revenuecat.com
@@ -114,4 +106,4 @@ Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/
 //哔哩哔哩换区 https://raw.githubusercontent.com/BiliUniverse/Global/main/modules/BiliBili.Global.sgmodule
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, bmall.camera360.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, boxjs.net, boxjs.com, mb3admin.com, buy.itunes.apple.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.bing.com
+hostname = %APPEND% api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, bmall.camera360.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, boxjs.net, boxjs.com, mb3admin.com, buy.itunes.apple.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.bing.com

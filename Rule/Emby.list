@@ -1,5 +1,5 @@
 # > NAME: Emby
-# > UPDATED: 2023-4-20
+# > UPDATED: 2023-4-29
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
@@ -48,3 +48,4 @@ DOMAIN,188.172.228.49
 
 # > Mulgore服务器
 DOMAIN,202.61.255.248
+DOMAIN,ju.dog

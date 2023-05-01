@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.4.13
+#!desc=Update-2023.5.2
 #!system=ios
 
 [Header Rewrite]
@@ -82,8 +82,6 @@ vsco解锁 = type=http-response,pattern=^https:\/\/(api\.revenuecat\.com\/v\d\/s
 豆瓣电影 = type=http-response,pattern=^https://m.douban.com/movie/subject/.+,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/Douban.js
 # > 美图秀秀
 美图秀秀 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/Mtxx.js,type=http-response,pattern=^https?://(api|h5).xiuxiu.meitu.com/(v1/user/show.json|v1/vip/vip_show.json|v1/vip/prompt/query.json|v1/h5/vip/sub_detail.json|v1/h5/user/self_show.json|v1/h5/vip/user_detail.json|v1/vip/prompt/query.json|v1/vip/prompt/query.json)
-# > 熊掌记 解锁
-熊掌记 = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/verify_receipt.js,script-update-interval=-1
 # > Nicegram 解锁
 Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Godrock354/Script/main/JavaScript/Surge/Nicegram.js,script-update-interval=0
 # > 奈飞评分
@@ -114,4 +112,4 @@ Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/
 //哔哩哔哩换区 https://raw.githubusercontent.com/BiliUniverse/Global/main/modules/BiliBili.Global.sgmodule
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, bmall.camera360.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, boxjs.net, boxjs.com, mb3admin.com, buy.itunes.apple.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.bing.com
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, bmall.camera360.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, boxjs.net, boxjs.com, mb3admin.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.bing.com

@@ -1,5 +1,5 @@
 # > NAME: Emby
-# > UPDATED: 2023-4-30
+# > UPDATED: 2023-5-6
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
@@ -40,8 +40,7 @@ DOMAIN,jp.embymv.tk
 DOMAIN,kr.embymv.tk
 
 # > 23 STUDIOA服务器
-DOMAIN,23s.casacam.net
-DOMAIN,188.172.228.49
+DOMAIN,23.emby77.cf
 
 # > Mulgore服务器
 DOMAIN,202.61.255.248

@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.5.10
+#!desc=Update-2023.5.15
 #!system=ios
 
 [Header Rewrite]
@@ -34,8 +34,6 @@ PROCESS-NAME,WebTorrent,DIRECT
 PROCESS-NAME,WebTorrent Helper,DIRECT
 # > VSCO 代理
 DOMAIN,measurement.com,Proxy
-# > Safari 防跳转
-DOMAIN,app-site-association.cdn-apple.com,REJECT
 # > Boxjs 代理
 DOMAIN-KEYWORD,jsdelivr.net,Proxy
 # > HDOBOX 去广告

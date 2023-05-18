@@ -1,5 +1,5 @@
 # > NAME: Emby
-# > UPDATED: 2023-5-14
+# > UPDATED: 2023-5-18
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
@@ -39,5 +39,8 @@ DOMAIN,embymv.tk
 DOMAIN,jp.embymv.tk
 DOMAIN,kr.embymv.tk
 
-# > 23 STUDIOA服务器
+# > 23 STUDIOA服务器       
 DOMAIN,23.emby77.cf
+
+# > TreeDiagram服务器       
+DOMAIN,789.123456.al

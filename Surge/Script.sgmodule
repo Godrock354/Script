@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.5.23
+#!desc=Update-2023.5.26
 #!system=ios
 
 [Header Rewrite]
@@ -50,7 +50,7 @@ DOMAIN-SUFFIX,applvn.com,REJECT
 
 [Script]
 # > 苹果策略优选
-策略优选 = type=rule,timeout=60,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/speedLimit.js,argument="Group=Apple&policy=DIRECT,Proxy&time=15&minSpeed=20"
+策略优选 = type=rule,timeout=60,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/speedLimit.js,argument="Return=10min,Group=Apple&policy=DIRECT,Proxy,Select&time=15&minSpeed=20"
 # > Spark 解锁、Forza Football解锁 api.revenuecat.com
 通用解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/revenuecat.js,script-update-interval=-1
 # > 京东App 历史价格 

@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.5.30
+#!desc=Update-2023.6.3
 #!system=ios
 
 [Header Rewrite]
@@ -20,6 +20,10 @@ DOMAIN,bard.google.com,United States
 # > Boom Beach
 DOMAIN,gamec.boombeachgame.com,Proxy
 DOMAIN,ingame.id.supercell.com,Proxy
+# > Safari 防跳转
+DOMAIN,app-site-association.cdn-apple.com,REJECT
+# > 机场网站 代理
+DOMAIN,nxboom.com,DIRECT
 # > Client (仅 macOS)
 PROCESS-NAME,UUBooster,DIRECT
 # > Download (仅 macOS)
@@ -36,6 +40,8 @@ PROCESS-NAME,WebTorrent Helper,DIRECT
 DOMAIN,measurement.com,Proxy
 # > Boxjs 代理
 DOMAIN-KEYWORD,jsdelivr.net,Proxy
+# > Sub-Store 代理
+DOMAIN-KEYWORD,vercel.app,Proxy
 # > HDOBOX 去广告
 DOMAIN-SUFFIX,applovin.com,REJECT
 DOMAIN-SUFFIX,applvn.com,REJECT

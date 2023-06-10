@@ -19,8 +19,6 @@
 汇率监控 = type=cron,cronexp=0 5 8 * * *,timeout=10,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/cnyusd.js
 # > 今日黄历
 今日黄历 = type=cron,cronexp=8 8 8 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/wnCalendar.js,script-update-interval=0,timeout=30
-# > 今日油价
-今日油价 = type=cron,cronexp=0 0 10 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/surgepushYJ.js,script-update-interval=0,timeout=30
 # > 捷停车
 捷顺停车 = type=cron,cronexp=0 5 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, script-update-interval=0
 # > Gist备份+恢复

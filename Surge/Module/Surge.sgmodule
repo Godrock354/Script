@@ -1,6 +1,5 @@
 #!name=内置模块
 #!desc=最后更新时间 2022-03-20
-#!system=ios
 
 # > 阻止所有UDP流量到端口443，使HTTP3请求退回到TCP流量
 [Rule]

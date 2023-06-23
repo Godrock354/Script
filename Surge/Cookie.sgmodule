@@ -1,6 +1,5 @@
 #!name=重写获取
 #!desc=Update-2023.6.2
-#!system=ios
 
 [Script]
 # > 京东Cookie 登陆 https://home.m.jd.com/myJd/newhome.action 或旧版网址 https://bean.m.jd.com/bean/signIndex.action

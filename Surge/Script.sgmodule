@@ -1,9 +1,11 @@
 #!name=脚本合集
-#!desc=Update-2023.7.20
+#!desc=Update-2023.7.21
 
 [Header Rewrite]
 # > Revenuecat
 https:\/\/api\.revenuecat\.com header-del x-revenuecat-etag
+# > Bing Ai
+^https:\/\/www\.bing\.com\/search header-replace User-Agent "Mozilla/5.0 (iphone; Intel Mac OS X 10_12_6) AppleWebKit/537.36 Chrome/110.0 Safari/537.36 Edg/110.0"
 
 [General]
 # > Boxjs
@@ -106,4 +108,4 @@ Xmind = type=http-response,pattern=^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices
 //M系列Mac解除iOS软件限制 https://raw.githubusercontent.com/Skyxim/Profile/main/Surge/Module/ForceInstallTF.sgmodule
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, api.revenuecat.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, api.revenuecat.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com

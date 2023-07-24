@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.7.21
+#!desc=Update-2023.7.24
 
 [Header Rewrite]
 # > Revenuecat
@@ -80,8 +80,10 @@ Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/
 奈飞评分 = type=http-response,requires-body=1,pattern=^https?:\/\/ios(-.*)?\.prod\.ftl\.netflix\.com\/iosui\/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 # > Xmind 解锁
 Xmind = type=http-response,pattern=^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js
+# > 解除微信限制
+微信限制 = type=http-response,pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js
 
-# > 模块订阅(单独添加)
+# > 模块订阅(按需单独添加)
 //跳过代理检测 https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule
 //TestFlight区域限制解除 https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightDownload.sgmodule
 //Spotify解锁 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module
@@ -108,4 +110,4 @@ Xmind = type=http-response,pattern=^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices
 //M系列Mac解除iOS软件限制 https://raw.githubusercontent.com/Skyxim/Profile/main/Surge/Module/ForceInstallTF.sgmodule
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, api.revenuecat.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, api.revenuecat.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com, security.wechat.com, weixin110.qq.com

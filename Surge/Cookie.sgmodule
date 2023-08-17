@@ -1,5 +1,5 @@
 #!name=重写获取
-#!desc=Update-2023.8.5
+#!desc=Update-2023.8.18
 
 [Script]
 # > 京东Cookie 登陆 https://home.m.jd.com/myJd/newhome.action 或旧版网址 https://bean.m.jd.com/bean/signIndex.action
@@ -22,6 +22,8 @@
 顺丰速运 = type=http-request, pattern=^https:\/\/ccsp-egmas.sf-express.com\/cx-app-member\/member\/app\/user\/universalSign,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js,requires-body=1
 # > 建行生活 app获取
 建行生活 = type=http-request,pattern=^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode=A3341A040,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js
+# > 高德打车 微信小程序获取
+高德打车 = type=http-response, pattern=^https:\/\/m5(-zb)?\.amap\.com\/ws\/yuece\/(act|openapi)\/(activity\/current\/)?query, requires-body=1, script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js
 
 [MITM]
-hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, mobile.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, ccsp-egmas.sf-express.com, yunbusiness.ccb.com
+hostname = %APPEND% ms.jr.jd.com, me-api.jd.com, api.m.jd.com, i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, mobile.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, ccsp-egmas.sf-express.com, yunbusiness.ccb.com, *.amap.com

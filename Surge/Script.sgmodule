@@ -1,9 +1,7 @@
 #!name=脚本合集
-#!desc=Update-2023.8.2
+#!desc=Update-2023.8.18
 
 [Header Rewrite]
-# > Revenuecat
-https:\/\/api\.revenuecat\.com header-del x-revenuecat-etag
 # > Bing Ai
 ^https:\/\/www\.bing\.com\/search header-replace User-Agent "Mozilla/5.0 (iphone; Intel Mac OS X 10_12_6) AppleWebKit/537.36 Chrome/110.0 Safari/537.36 Edg/110.0"
 
@@ -12,8 +10,6 @@ https:\/\/api\.revenuecat\.com header-del x-revenuecat-etag
 force-http-engine-hosts = %APPEND% boxjs.net, boxjs.com
 
 [Rule]
-# > 策略优选
-AND,((DOMAIN,iosapps.itunes.apple.com), (SCRIPT,策略优选)),Apple
 # > Bard 代理
 DOMAIN,bard.google.com,United States
 # > Boom Beach
@@ -42,10 +38,6 @@ DOMAIN-SUFFIX,applvn.com,REJECT
 ^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 
 [Script]
-# > 苹果策略优选
-策略优选 = type=rule,timeout=60,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/speedLimit.js,argument="Return=10min,Group=Apple&policy=DIRECT,Proxy,Select&time=15&minSpeed=20"
-# > Spark 解锁、Forza Football解锁 api.revenuecat.com
-通用解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/revenuecat.js,script-update-interval=-1
 # > 京东App 历史价格 
 京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
 # > Boxjs
@@ -112,4 +104,4 @@ Xmind = type=http-response,pattern=^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices
 //M系列Mac解除iOS软件限制 https://raw.githubusercontent.com/Skyxim/Profile/main/Surge/Module/ForceInstallTF.sgmodule
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, api.revenuecat.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com, biz.cyapi.cn, wrapper.cyapi.cn, app.bilibili.com
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com, biz.cyapi.cn, wrapper.cyapi.cn, app.bilibili.com

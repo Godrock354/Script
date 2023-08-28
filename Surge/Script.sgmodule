@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.8.18
+#!desc=Update-2023.8.28
 
 [Header Rewrite]
 # > Bing Ai
@@ -25,9 +25,6 @@ DOMAIN,measurement.com,Proxy
 DOMAIN-KEYWORD,jsdelivr.net,Proxy
 # > Sub-Store 代理
 DOMAIN-KEYWORD,vercel.app,Proxy
-# > HDOBOX 去广告
-DOMAIN-SUFFIX,applovin.com,REJECT
-DOMAIN-SUFFIX,applvn.com,REJECT
 
 [URL Rewrite]
 # > TikTok 换区
@@ -55,8 +52,6 @@ EmbyPro = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/r
 全能扫描 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/camscanner.js,type=http-response,pattern=https:\/\/(api|api-cs)*\.intsig\.net\/purchase\/cs\/query_property\?,script-update-interval=0
 # > Dayone vip
 Day One = type=http-response,pattern=^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/dayone.js,script-update-interval=0
-# > vsco 解锁
-vsco解锁 = type=http-response,pattern=^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/vsco.js,script-update-interval=0
 # > 百度云盘 解锁
 百度云盘 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/bdcloud.js
 # > 百度跳转
@@ -104,4 +99,4 @@ Xmind = type=http-response,pattern=^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices
 //M系列Mac解除iOS软件限制 https://raw.githubusercontent.com/Skyxim/Profile/main/Surge/Module/ForceInstallTF.sgmodule
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, vsco.co, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com, biz.cyapi.cn, wrapper.cyapi.cn, app.bilibili.com
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com, biz.cyapi.cn, wrapper.cyapi.cn, app.bilibili.com

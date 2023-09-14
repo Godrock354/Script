@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.8.28
+#!desc=Update-2023.9.14
 
 [Header Rewrite]
 # > Bing Ai
@@ -67,7 +67,7 @@ Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/
 Xmind = type=http-response,pattern=^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/Xmind.js
 # > 彩云天气 解锁
 彩云天气 = type=http-response,pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
-# > 哔哩哔哩 获取
+# > 哔哩哔哩 保持ck
 哔哩哔哩 = type=http-request,pattern=^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\?,script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,requires-body=0
 
 # > 模块订阅(按需单独添加)

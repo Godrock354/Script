@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.9.14
+#!desc=Update-2023.9.15
 
 [Header Rewrite]
 # > Bing Ai
@@ -97,4 +97,4 @@ Xmind = type=http-response,pattern=^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices
 //M系列Mac解除iOS软件限制 https://raw.githubusercontent.com/Skyxim/Profile/main/Surge/Module/ForceInstallTF.sgmodule
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com, biz.cyapi.cn, wrapper.cyapi.cn, app.bilibili.com
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, dayone.*, pan.baidu.com, boxer.baidu.com, lcs-mobile-cops.adobe.io, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, restore-access.indream.app, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com, biz.cyapi.cn, app.bilibili.com

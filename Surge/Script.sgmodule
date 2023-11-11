@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.10.24
+#!desc=Update-2023.11.11
 
 [Header Rewrite]
 # > Bing Ai
@@ -12,9 +12,6 @@ force-http-engine-hosts = %APPEND% boxjs.net, boxjs.com
 [Rule]
 # > Bard 代理
 DOMAIN,bard.google.com,United States
-# > Boom Beach
-DOMAIN,gamec.boombeachgame.com,Proxy
-DOMAIN,ingame.id.supercell.com,Proxy
 # > Safari 防跳转
 DOMAIN,app-site-association.cdn-apple.com,REJECT
 # > 机场网站 代理

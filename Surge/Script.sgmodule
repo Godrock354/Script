@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.11.12
+#!desc=Update-2023.11.17
 
 [Header Rewrite]
 # > Bing Ai
@@ -10,6 +10,8 @@
 force-http-engine-hosts = %APPEND% boxjs.net, boxjs.com
 
 [Rule]
+# > Jsbox Erots 商店代理
+DOMAIN,lc.liuguogy.com,Proxy
 # > Bard 代理
 DOMAIN,bard.google.com,United States
 # > Safari 防跳转

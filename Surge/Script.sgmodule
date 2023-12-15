@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.12.10
+#!desc=Update-2023.12.15
 
 [Header Rewrite]
 # > Bing Ai
@@ -7,7 +7,7 @@
 
 [General]
 # > Boxjs
-force-http-engine-hosts = %APPEND% boxjs.net, boxjs.com
+force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
 
 [Rule]
 # > Jsbox Erots 商店代理
@@ -22,6 +22,8 @@ DOMAIN,nxboom.com,DIRECT
 DOMAIN-KEYWORD,jsdelivr.net,Proxy
 # > Sub-Store 代理
 DOMAIN-KEYWORD,vercel.app,Proxy
+# > MyBlockAds分流（Script-Hub）
+RULE-SET,http://script.hub/file/_start_/https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list/_end_/qx_RuCu6_MyBlockAds.list?type=rule-set&target=surge-rule-set&x=mall.bilibili.com%2Bpassport.bilibili.com&del=true&nore=true&sni=httpdns%2B163,REJECT
 
 [URL Rewrite]
 # > TikTok 换区
@@ -35,7 +37,7 @@ DOMAIN-KEYWORD,vercel.app,Proxy
 # > 京东App 历史价格 
 京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
 # > Boxjs
-会话数据 = type=http-request,pattern=https?:\/\/boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+会话管理 = type=http-request,pattern=^https?:\/\/(.+\.)?boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
 # > SUB订阅管理
 订阅管理 = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
 # > Emby 解锁

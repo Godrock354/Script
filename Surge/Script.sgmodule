@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.12.17
+#!desc=Update-2023.12.19
 
 [Header Rewrite]
 # > Bing Ai
@@ -22,8 +22,6 @@ DOMAIN,nxboom.com,DIRECT
 DOMAIN-KEYWORD,jsdelivr.net,Proxy
 # > Sub-Store 代理
 DOMAIN-KEYWORD,vercel.app,Proxy
-# > MyBlockAds分流（Script-Hub）
-RULE-SET,http://script.hub/file/_start_/https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list/_end_/MyBlockAds.list?type=rule-set&target=surge-rule-set&del=true&nore=true,REJECT
 
 [URL Rewrite]
 # > TikTok 换区

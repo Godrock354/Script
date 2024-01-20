@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2023.12.28
+#!desc=Update-2024.1.20
 
 [Header Rewrite]
 # > Bing Ai
@@ -22,14 +22,6 @@ DOMAIN,nxboom.com,DIRECT
 DOMAIN-KEYWORD,jsdelivr.net,Proxy
 # > Sub-Store 代理
 DOMAIN-KEYWORD,vercel.app,Proxy
-
-[URL Rewrite]
-# > TikTok 换区
-# > (更换307前面JP JP=日本 KR=韩国 HK=香港 US=美国）
-(?<=&mcc_mnc=)4 2 307
-(?<=_region=)CN(?=&) JP 307
-(^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
-^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 
 [Script]
 # > 京东App 历史价格 
@@ -61,30 +53,6 @@ Xmind = type=http-response,pattern=^https?:\/\/www\.xmind\.(cn|app)\/.+\/devices
 # > 彩云天气 解锁
 彩云天气 = type=http-response,pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
 
-# > 模块订阅(按需单独添加)
-//跳过代理检测 https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule
-//TestFlight区域限制解除 https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightDownload.sgmodule
-//Spotify解锁 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module
-//Emby解锁 https://raw.githubusercontent.com/rartv/EmbyPublic/test/surge/emby-plugin.sgmodule
-//Siri区域解锁 https://raw.githubusercontent.com/VirgilClyne/iRingo/main/sgmodule/Siri.Proxy.sgmodule
-//京东联盟转链 https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jdapp_to_union.sgmodule
-//京东半自动销卡 https://raw.githubusercontent.com/asnfohsdgfbkxcv/script/main/surge/Jd_unbindCard.sgmodule
-//Dualsub https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/Dualsub.sgmodule
-//YouTube去广告 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/YouTubeAds.sgmodule
-//高级设置URL重定向 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/General.sgmodule
-//微信链接限制 https://raw.githubusercontent.com/zZPiglet/Task/master/UnblockURLinWeChat.sgmodule
-//喜马拉雅去广告Surge版 https://raw.githubusercontent.com/githubdulong/Script/master/Surge/XiMaLaYa.sgmodule
-//TF测试共享（按需启用与TF下载修正二选一） https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/TestFlightAccount.sgmodule
-//公测监控 https://raw.githubusercontent.com/githubdulong/Script/master/Surge/autotf.sgmodule
-//定位修改 按需启用 https://raw.githubusercontent.com/VirgilClyne/iRingo/main/sgmodule/Location.sgmodule
-//模块更新捷径 https://www.icloud.com/shortcuts/67c3ace4fb3a4f9ebbe8d3184cd82e39
-//QX转换的模块更新捷径 https://www.icloud.com/shortcuts/0dced4438f09432ca7b22757ba861eb5
-//格式转换 https://raw.githubusercontent.com/chengkongyiban/Surge/main/modules/QX_to_Surge.sgmodule
-//哔哩哔哩自定义 https://raw.githubusercontent.com/BiliUniverse/Enhanced/main/modules/BiliBili.Enhanced.sgmodule
-//哔哩哔哩换区 https://raw.githubusercontent.com/BiliUniverse/Global/main/modules/BiliBili.Global.sgmodule
-//哔哩哔哩去广告 https://raw.githubusercontent.com/BiliUniverse/ADBlock/beta/modules/BiliBili.ADBlock.beta.sgmodule
-//什么值得买广告 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.sgmodule
-//M系列Mac解除iOS软件限制 https://raw.githubusercontent.com/Skyxim/Profile/main/Surge/Module/ForceInstallTF.sgmodule
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, pan.baidu.com, boxer.baidu.com, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com, biz.cyapi.cn
+hostname = %APPEND% api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, pan.baidu.com, boxer.baidu.com, m.douban.com, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, www.xmind.*, www.bing.com, biz.cyapi.cn

@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2024.1.20
+#!desc=Update-2024.1.22
 
 [Header Rewrite]
 # > Bing Ai
@@ -20,6 +20,8 @@ DOMAIN,app-site-association.cdn-apple.com,REJECT
 DOMAIN,nxboom.com,DIRECT
 # > Boxjs 代理
 DOMAIN-KEYWORD,jsdelivr.net,Proxy
+DOMAIN-KEYWORD,i.pinimg.com,Proxy
+DOMAIN-KEYWORD,64.media.tumblr.com,Proxy
 # > Sub-Store 代理
 DOMAIN-KEYWORD,vercel.app,Proxy
 

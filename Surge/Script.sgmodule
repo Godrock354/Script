@@ -1,13 +1,13 @@
 #!name=脚本合集
-#!desc=Update-2024.1.27
+#!desc=Update-2024.1.28
 
 [Header Rewrite]
 # > Bing Ai
 ^https:\/\/www\.bing\.com\/search header-replace User-Agent "Mozilla/5.0 (iphone; Intel Mac OS X 10_12_6) AppleWebKit/537.36 Chrome/110.0 Safari/537.36 Edg/110.0"
 
 [General]
-# > Boxjs
-force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
+# > Boxjs,Script hub
+force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net, script.hub, *.script.hub
 
 [Rule]
 # > Gemini 美国代理

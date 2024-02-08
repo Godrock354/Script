@@ -1,5 +1,5 @@
 # > NAME: Emby
-# > UPDATED: 2023-5-18
+# > UPDATED: 2024-2-8
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
@@ -35,9 +35,7 @@ DOMAIN,cf.embytv.cf
 DOMAIN,cdn.embytv.cf
 
 # > Peach服务器
-DOMAIN,embymv.tk
-DOMAIN,jp.embymv.tk
-DOMAIN,kr.embymv.tk
+DOMAIN,peachmv.me
 
 # > 23 STUDIOA服务器       
 DOMAIN,23.emby77.cf

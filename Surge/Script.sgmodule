@@ -15,8 +15,8 @@ always-raw-tcp-keywords = %APPEND% "Content-Type: application/pairing+tlv8"
 
 [Rule]
 # > 小米运动 登录域名
-DOMAIN,api-user.huami.com,United States
-DOMAIN,account.huami.com,United States
+DOMAIN,api-user.huami.com,Proxy
+DOMAIN,account.huami.com,Proxy
 # > Gemini 美国代理
 DOMAIN,generativelanguage.googleapis.com,United States
 # > Jsbox Erots 商店代理

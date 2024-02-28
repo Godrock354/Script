@@ -14,6 +14,9 @@ force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.ne
 always-raw-tcp-keywords = %APPEND% "Content-Type: application/pairing+tlv8"
 
 [Rule]
+# > 小米运动 登录域名
+DOMAIN,api-user.huami.com,United States
+DOMAIN,account.huami.com,United States
 # > Gemini 美国代理
 DOMAIN,generativelanguage.googleapis.com,United States
 # > Jsbox Erots 商店代理

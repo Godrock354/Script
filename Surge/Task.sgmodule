@@ -1,5 +1,5 @@
 #!name=定时脚本
-#!desc=Update-2024.1.28
+#!desc=Update-2024.2.28
 
 [Script]
 # > 美团
@@ -16,6 +16,8 @@
 阿里云盘 = type=cron,cronexp="30 2 0,3 * * *",wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js,script-update-interval=0,timeout=240
 # > 建行生活
 建行生活 = type=cron,cronexp=0 3 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,script-update-interval=0,timeout=30
+# > 小米运动
+小米运动 = type=cron,cronexp=30 3 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/mi/step.js,script-update-interval=0,timeout=30
 # > Gist备份+恢复
 数据备份 = type=cron,cronexp=0 50 23 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js,script-update-interval=0,timeout=120
 //数据恢复 = type=cron,cronexp=0 55 23 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js,script-update-interval=0,timeout=120

@@ -1,5 +1,5 @@
 # > NAME: Emby
-# > UPDATED: 2024-2-14
+# > UPDATED: 2024-3-13
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
@@ -21,24 +21,11 @@ DOMAIN,pub4.emby.wtf
 DOMAIN,cf.jmsooo.com
 DOMAIN,ha.jmsooo.com
 
-# > Misty服务器
-DOMAIN,misty.ltd
-
 # > Froghub服务器
 DOMAIN,178.173.230.8
 
 # > CC服务器
 DOMAIN,cc.coemn.com
 
-# > Orange服务器
-DOMAIN,cf.embytv.cf
-DOMAIN,cdn.embytv.cf
-
 # > Peach服务器
 DOMAIN,peachmv.me
-
-# > 23 STUDIOA服务器       
-DOMAIN,23.emby77.cf
-
-# > TreeDiagram服务器       
-DOMAIN,789.123456.al

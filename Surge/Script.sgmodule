@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2024.4.14
+#!desc=Update-2024.4.24
 
 [Header Rewrite]
 # > Bing Ai
@@ -23,8 +23,6 @@ DOMAIN,lc.liuguogy.com,Proxy
 DOMAIN,bard.google.com,United States
 # > Safari 防跳转
 DOMAIN,app-site-association.cdn-apple.com,REJECT
-# > 机场网站 代理
-DOMAIN,nxboom.com,DIRECT
 # > Boxjs 代理
 DOMAIN-KEYWORD,jsdelivr.net,Proxy
 DOMAIN-KEYWORD,i.pinimg.com,Proxy

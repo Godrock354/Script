@@ -1,15 +1,16 @@
 # > NAME: Emby
-# > UPDATED: 2024-3-13
+# > UPDATED: 2024-4-25
 
 # > Odyssey+服务器
 DOMAIN,cf.odysseyplus.site
+DOMAIN,v.odysseyplus.site
 DOMAIN,us.odysseyplus.site
 DOMAIN,kr.odysseyplus.site
 DOMAIN,jp.odysseyplus.site
-DOMAIN,jp2.odysseyplus.site
 
-# > Nebula服务器
-DOMAIN,direct.nebula-emby.com
+# > 卷毛鼠服务器
+DOMAIN,cf.jmsooo.com
+DOMAIN,ha.jmsooo.com
 
 # > 终点站服务器
 DOMAIN,pub1.emby.wtf
@@ -17,15 +18,11 @@ DOMAIN,pub2.emby.wtf
 DOMAIN,pub3.emby.wtf
 DOMAIN,pub4.emby.wtf
 
-# > 卷毛鼠服务器
-DOMAIN,cf.jmsooo.com
-DOMAIN,ha.jmsooo.com
-
 # > Froghub服务器
 DOMAIN,178.173.230.8
 
-# > CC服务器
-DOMAIN,cc.coemn.com
+# > 纸片人小站
+DOMAIN,embyplus.org  
 
 # > Peach服务器
 DOMAIN,peachmv.me

@@ -1,5 +1,5 @@
 #!name=定时脚本
-#!desc=Update-2024.5.2
+#!desc=Update-2024.5.7
 
 [Script]
 # > 美团
@@ -18,10 +18,10 @@
 建行生活 = type=cron,cronexp=0 3 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,script-update-interval=0,timeout=30
 # > 捷停车
 捷顺停车 = type=cron,cronexp=30 3 0 * * *,wake-system=1, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, script-update-interval=0,timeout=60
-# > 蜜雪冰城
-蜜雪冰城 = type=cron,cronexp=0 4 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js,script-update-interval=0,timeout=60
 # > 霸王茶姬
-霸王茶姬 = type=cron,cronexp=30 4 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js,script-update-interval=0,timeout=60
+霸王茶姬 = type=cron,cronexp=0 4 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js,script-update-interval=0,timeout=60
+# > 蜜雪冰城
+蜜雪冰城 = type=cron,cronexp=30 4 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js,script-update-interval=0,timeout=60
 # > 奈雪的茶
 奈雪的茶 = type=cron,cronexp=0 5 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js,script-update-interval=0,timeout=60
 # > 小米刷步 Boxjs登录账户

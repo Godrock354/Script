@@ -19,7 +19,7 @@
 # > 捷停车
 捷顺停车 = type=cron,cronexp=30 3 0 * * *,wake-system=1, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, script-update-interval=0,timeout=60
 # > 霸王茶姬
-霸王茶姬 = type=cron,cronexp=0 4 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js,script-update-interval=0,timeout=60
+霸王茶姬 = type=cron,cronexp=0 4 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0,timeout=60
 # > 蜜雪冰城
 蜜雪冰城 = type=cron,cronexp=30 4 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js,script-update-interval=0,timeout=60
 # > 奈雪的茶

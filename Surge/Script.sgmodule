@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2024.6.3
+#!desc=Update-2024.6.21
 
 [Header Rewrite]
 # > Bing Ai
@@ -12,6 +12,8 @@ skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com
 force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net, script.hub, *.script.hub
 
 [Rule]
+# > T-Mobile 代理
+DOMAIN,prepaid.t-mobile.com,United States
 # > 小米运动 登录域名
 DOMAIN,api-user.huami.com,Proxy
 DOMAIN,account.huami.com,Proxy

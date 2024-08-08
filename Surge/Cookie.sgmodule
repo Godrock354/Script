@@ -1,5 +1,5 @@
 #!name=重写获取
-#!desc=Update-2024.5.9
+#!desc=Update-2024.8.8
 
 [Script]
 # > 美团 app签到获取
@@ -21,14 +21,16 @@
 # > 捷停车 app获取
 捷顺停车 = type=http-request,pattern=^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js
 # > 奶茶合集 小程序获取（霸王茶姬、沪上阿姨、益禾堂等）
-奶茶合集 = type=http-response, pattern=^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp),requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js
-奶茶合集 = type=http-request, pattern=^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign),requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js
+奶茶合集 = type=http-response,pattern=^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp),requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js
+奶茶合集 = type=http-request,pattern=^https:\/\/(webapi|webapi2|qmwebapi)\.qmai\.cn\/web\/(catering\/integral|cmk-center)\/sign\/(signIn|takePartInSign),requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js
 # > 蜜雪冰城 小程序获取
 蜜雪冰城 = type=http-response,pattern=^https:\/\/mxsa\.mxbc\.net\/api\/v1\/customer\/info,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/Sliverkiss/865c82e42a5730bb696f6700ebb94cee/raw/mxbc.js
 # > 奈雪的茶 小程序获取
 奈雪的茶 = type=http-request,pattern=^https:\/\/tm-web\.pin-dao\.cn\/user\/base-userinfo,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js
 # > 携程旅行 小程序获取
 携程旅行 = type=http-response,pattern=^https:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/[a-zA-Z]+Login(?:$|\?),requires-body=1,max-size=0,debug=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Ctrip-DailyBonus/Ctrip.js
+# > 网上国网 小组件获取
+网上国网 = type=http-request,pattern=^https?:\/\/api\.example\.com\/electricity\/bill\/all,requires-body=true,max-size=-1,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.scriptable.js
 
 [MITM]
-hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, mxsa.mxbc.net, tm-web.pin-dao.cn, m.ctrip.com
+hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, mxsa.mxbc.net, tm-web.pin-dao.cn, m.ctrip.com, api.example.com

@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2024.7.22
+#!desc=Update-2024.8.20
 
 [Header Rewrite]
 # > Bing Ai
@@ -43,8 +43,6 @@ DOMAIN-KEYWORD,vercel.app,Proxy
 ^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
 
 [Script]
-# > 京东App 历史价格 
-京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
 # > Boxjs
 会话管理 = type=http-request,pattern=^https?:\/\/(.+\.)?boxjs\.(com|net),script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true,timeout=120,engine=auto
 # > Sub-Store 订阅管理
@@ -71,4 +69,4 @@ D+评分 = type=http-response,pattern=^https:\/\/disney\.api\.edge\.bamgrid\.com
 脚本转换 = type=http-request, pattern=^https?:\/\/script\.hub\/convert\/, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.beta.js,timeout=300
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, api.m.jd.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, disney.api.edge.bamgrid.com, www.bing.com, biz.cyapi.cn, script.hub, *.script.hub
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, disney.api.edge.bamgrid.com, www.bing.com, biz.cyapi.cn, script.hub, *.script.hub

@@ -1,5 +1,5 @@
 #!name=重写获取
-#!desc=Update-2024.8.13
+#!desc=Update-2024.9.2
 
 [Script]
 # > 美团 app签到获取
@@ -30,7 +30,9 @@
 # > 携程旅行 小程序获取
 携程旅行 = type=http-response,pattern=^https:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/[a-zA-Z]+Login(?:$|\?),requires-body=1,max-size=0,debug=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Ctrip-DailyBonus/Ctrip.js
 # > 网上国网 小组件获取
-网上国网 = type=http-request, pattern=^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all,script-path=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js,requires-body=true,max-size=-1,timeout=60
+网上国网 = type=http-request,pattern=^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all,requires-body=true,max-size=-1,script-path=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js
+# > 顺丰速运 小程序获取
+顺丰速运 = type=http-response,pattern=^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+,requires-body=true,script-path=https://gist.githubusercontent.com/Sliverkiss/f4bbb9911b3d8fde9ff9ce077073f0ac/raw/sfsyV2.js
 
 [MITM]
-hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, mxsa.mxbc.net, tm-web.pin-dao.cn, m.ctrip.com, api.wsgw-rewrite.com
+hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, mxsa.mxbc.net, tm-web.pin-dao.cn, m.ctrip.com, api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com

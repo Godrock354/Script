@@ -17,7 +17,7 @@
 # > 建行生活
 建行生活 = type=cron,cronexp=0 3 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,script-update-interval=0,timeout=30
 # > 捷停车
-捷顺停车 = type=cron,cronexp=30 3 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, script-update-interval=0,timeout=60
+捷顺停车 = type=cron,cronexp=30 3 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js,script-update-interval=0,timeout=60
 # > 奶茶合集
 奶茶合集 = type=cron,cronexp=0 4 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js,script-update-interval=0,timeout=60
 # > 蜜雪冰城

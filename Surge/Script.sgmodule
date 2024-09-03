@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2024.8.20
+#!desc=Update-2024.9.3
 
 [Header Rewrite]
 # > Bing Ai
@@ -61,7 +61,7 @@ EmbyPro = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/r
 # > D+评分
 D+评分 = type=http-response,pattern=^https:\/\/disney\.api\.edge\.bamgrid\.com\/explore\/v\d\.\d\/page\/entity-,requires-body=1,max-size=0,binary-body-mode=0,debug=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Disney/DisneyRating.js,engine=jsc
 # > 彩云天气 解锁
-彩云天气 = type=http-response,pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
+彩云天气 = type=http-response,pattern=^https?:\/\/(ad|biz|wrapper|api|starplucker)\.cyapi\.cn\/.*$,requires-body=true,max-size=-1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js
 # > Script-hub 解析转换
 前端配置 = type=http-request, pattern=^https?:\/\/script\.hub\/($|edit\/|reload), script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-hub.beta.js,timeout=300
 重写转换 = type=http-request, pattern=^https?:\/\/script\.hub\/file\/_start_\/.+type=(?:qx-rewrite|surge-module|loon-plugin|all-module), script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/Rewrite-Parser.beta.js,timeout=300

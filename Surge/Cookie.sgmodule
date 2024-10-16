@@ -1,5 +1,5 @@
 #!name=重写获取
-#!desc=Update-2024.9.2
+#!desc=Update-2024.10.16
 
 [Script]
 # > 美团 app签到获取
@@ -33,6 +33,8 @@
 网上国网 = type=http-request,pattern=^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all,requires-body=true,max-size=-1,script-path=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js
 # > 顺丰速运 小程序获取
 顺丰速运 = type=http-response,pattern=^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+,requires-body=true,script-path=https://gist.githubusercontent.com/Sliverkiss/f4bbb9911b3d8fde9ff9ce077073f0ac/raw/sfsyV2.js
+# > WPS https://vip.wps.cn/home获取
+WPS = type=http-request, pattern=^https:\/\/(vip|account)(userinfo|\.wps\.cn\/p\/auth\/check)$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/wps.js, timeout=60
 
 [MITM]
-hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, mxsa.mxbc.net, tm-web.pin-dao.cn, m.ctrip.com, api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com
+hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, mxsa.mxbc.net, tm-web.pin-dao.cn, m.ctrip.com, api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com, *.wps.cn

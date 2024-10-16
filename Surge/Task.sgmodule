@@ -30,6 +30,8 @@
 顺丰速运 = type=cron,cronexp=0 6 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/f4bbb9911b3d8fde9ff9ce077073f0ac/raw/sfsyV2.js,script-update-interval=0,timeout=60
 # > WPS签到
 WPS签到 = type=cron,cronexp=30 6 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/wps.js,script-update-interval=0,timeout=120
+# > 吾爱破解
+吾爱破解 = type=cron,cronexp=0 7 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js,script-update-interval=0,timeout=60
 # > Boxjs 备份+恢复
 数据备份 = type=cron,cronexp=0 50 23 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js,script-update-interval=0,timeout=120
 //数据恢复 = type=cron,cronexp=0 55 23 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js,script-update-interval=0,timeout=120

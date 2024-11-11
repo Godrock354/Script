@@ -1,5 +1,5 @@
 #!name=重写获取
-#!desc=Update-2024.10.26
+#!desc=Update-2024.11.11
 
 [Script]
 # > 美团 app签到获取
@@ -37,6 +37,8 @@
 WPS签到 = type=http-request,pattern=^https:\/\/(vip|account)(userinfo|\.wps\.cn\/p\/auth\/check)$,script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/wps.js
 # > 吾爱破解 web获取
 吾爱破解 = type=http-request,pattern=^https:\/\/www\.52pojie\.cn\/home\.php\?,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js
+# > 中国电信 https://e.dlife.cn/index.do获取
+电信组件 = type=http-request,pattern=^https:\/\/e\.dlife\.cn\/user\/loginMiddle,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dompling/Script/master/10000/index.js,script-update-interval=0
 
 [MITM]
-hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, mxsa.mxbc.net, tm-web.pin-dao.cn, m.ctrip.com, api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com, *.wps.cn, www.52pojie.cn
+hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, mxsa.mxbc.net, tm-web.pin-dao.cn, m.ctrip.com, api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com, *.wps.cn, www.52pojie.cn, e.dlife.cn

@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2024.11.1
+#!desc=Update-2024.11.17
 
 [Header Rewrite]
 # > Bing Ai
@@ -12,6 +12,8 @@ skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com
 force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net, script.hub, *.script.hub
 
 [Rule]
+# > 防止TG加载转圈
+IP-CIDR,95.161.76.101/32,REJECT-NO-DROP,no-resolve
 # > Applehub 代理
 DOMAIN,sign.apphb.cn,Proxy
 # > 小米运动 登录域名

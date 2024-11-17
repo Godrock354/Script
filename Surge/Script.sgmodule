@@ -13,7 +13,7 @@ force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.ne
 
 [Rule]
 # > 防止TG加载转圈
-IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve
+IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve,pre-matching
 # > Applehub 代理
 DOMAIN,sign.apphb.cn,Proxy
 # > 小米运动 登录域名

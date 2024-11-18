@@ -1,1 +1,26 @@
-{"name":"Emby", "description":"by Godrock", "icons":[{"name":"Odyssey+", "url":"https://raw.githubusercontent.com/Godrock354/Script/main/Icon/Emby/Odyssey.png"}, {"name":"Terminus", "url":"https://raw.githubusercontent.com/Godrock354/Script/main/Icon/Emby/Terminus.png"}, {"name":"Froghub", "url":"https://raw.githubusercontent.com/Godrock354/Script/main/Icon/Emby/Froghub.png"},{"name":"CurlyMouse", "url":"https://raw.githubusercontent.com/Godrock354/Script/main/Icon/Emby/CurlyMouse.png"},{"name":"Nebula", "url":"https://raw.githubusercontent.com/Godrock354/Script/main/Icon/Emby/Nebula.png"},{"name":"Texon", "url":"https://raw.githubusercontent.com/Godrock354/Script/main/Icon/Emby/Texon.png"}
+{
+    "name":"Fileball",
+    "description":"By  Godrock",
+    "icons":[
+        {
+            "name":"Odyssey",
+            "url":"https://raw.githubusercontent.com/Godrock354/Script/refs/heads/main/Icon/Emby/Odyssey.png"
+        },
+        {
+            "name":"CurlyMouse",
+            "url":"https://raw.githubusercontent.com/Godrock354/Script/refs/heads/main/Icon/Emby/CurlyMouse.png"
+        },
+        {
+            "name":"Terminus",
+            "url":"https://raw.githubusercontent.com/Godrock354/Script/refs/heads/main/Icon/Emby/Terminus.png"
+        },
+        {
+            "name":"Froghub",
+            "url":"https://raw.githubusercontent.com/Godrock354/Script/refs/heads/main/Icon/Emby/Froghub.png"
+        },
+        {
+            "name":"Nebula",
+            "url":"https://raw.githubusercontent.com/Godrock354/Script/refs/heads/main/Icon/Emby/Nebula.png"
+        }  
+    ]
+}

@@ -73,7 +73,7 @@ D+评分 = type=http-response,pattern=^https:\/\/disney\.api\.edge\.bamgrid\.com
 # > 京东比价 版本≤V12.4.3
 京东比价 = type=http-response,pattern=^https?:\/\/api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js,requires-body=true,max-size=-1,timeout=60
 # > TikTok 去水印
-下载水印 = type=http-response,pattern=https?:\/\/.*\.tiktokv\.com\/aweme\/v\d\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list|aweme\/favorite),max-size=0,script-update-interval=0,script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/Tiktok.js,requires-body=true,timeout=30,max-size=0
+下载水印 = type=http-response,pattern=https?:\/\/.*\.tiktokv\.com\/aweme\/v\d\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list|aweme\/favorite),script-update-interval=0,script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/Tiktok.js,requires-body=true,timeout=30,max-size=0
 
 [MITM]
 hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, sub.store, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, disney.api.edge.bamgrid.com, www.bing.com, biz.cyapi.cn, script.hub, *.script.hub, api.m.jd.com

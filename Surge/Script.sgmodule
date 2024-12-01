@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2024.11.27
+#!desc=Update-2024.12.1
 
 [Header Rewrite]
 # > Bing Ai
@@ -40,7 +40,7 @@ DOMAIN-KEYWORD,vercel.app,Proxy
 # > TikTok 换区
 # > (更换307前面JP JP=日本 KR=韩国 HK=香港 US=美国）
 (?<=_region=)CN(?=&) JP 307
-(^h.+v5\/)(.+) $1 302
+(^https?:\/\/.*\.tiktokv\.com.*\/v5\/)(.+) $1 302
 (?<=&mcc_mnc=)4 2 307
 (?<=eme\/v)2(?=\/f\w{2}d\/\?.*) 1 302
 

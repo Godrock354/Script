@@ -1,0 +1,63 @@
+#!name=彩云天气
+#!desc=caiyun
+
+[Rule]
+# 上传信息
+DOMAIN,gather.colorfulclouds.net,REJECT
+
+[Map Local]
+# 普通版开屏广告(此广告不定时出现)
+^https:\/\/ad\.cyapi\.cn\/v2\/req\?app_name=weather data-type=text data="{}" status-code=200
+
+# 7.1.9 限时福利Svip
+^https:\/\/biz\.cyapi\.cn\/p\/v1\/trial_card\/info data-type=text data="{}" status-code=200
+
+# 7.2.0普通版修改VIP后提示账号迁移
+^https:\/\/biz\.cyapi\.cn\/api\/v1\/token\/device$ data-type=text data="{}" status-code=200
+
+# 亲友卡
+^https:\/\/biz\.cyapi\.cn\/p\/v1\/entries data-type=text data="{}" status-code=200
+
+# 左上角+进去推荐
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config$ data-type=text data="{}" status-code=200
+
+# 通知
+^https:\/\/starplucker\.cyapi\.cn\/v3\/notification\/message_center data-type=text data="{}" status-code=200
+
+# 会员限时弹窗
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/home\/conditions\/local$ data-type=text data="{}" status-code=200
+
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/home_activity\/conditions$ data-type=text data="{}" status-code=200
+
+^https:\/\/starplucker\.cyapi\.cn\/v3\/config\/cypage\/40day\/conditions\/local$ data-type=text data="{}" status-code=200
+
+[Script]
+# 赏叶赏花模块
+caiyun = type=http-response, pattern=^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\?app_name=weather, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 解锁旧版vip(7.20.0之前)
+caiyun = type=http-response, pattern=^https:\/\/biz\.cyapi\.cn\/v2\/user, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 卫星云图 48小时预报
+caiyun = type=http-request, pattern=^https:\/\/wrapper\.cyapi\.cn\/v1\/(satellite|nafp\/origin_images), script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, timeout=60
+
+# 7.20.0版本显示VIP
+caiyun = type=http-response, pattern=^https?:\/\/biz\.cyapi\.cn\/api\/v1\/user_detail$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 7.22.0版本 40天趋势/60天潮汐/风 等等有时候无法加载
+caiyun = type=http-request, pattern=^https:\/\/starplucker\.cyapi\.cn\/v3\/, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, timeout=60
+
+# 发现-轮播
+caiyun = type=http-response, pattern=^https:\/\/starplucker\.cyapi\.cn\/v3\/operation\/banners\?user_type=paid$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 发现-宫格
+caiyun = type=http-response, pattern=^https:\/\/starplucker\.cyapi\.cn\/v3\/operation\/features\?user_type=paid$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 发现-官方活动
+caiyun = type=http-response, pattern=^https:\/\/starplucker\.cyapi\.cn\/v3\/campaigns$, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+# 发现-瀑布流
+caiyun = type=http-response, pattern=^https:\/\/starplucker\.cyapi\.cn\/v3\/operation\/feeds, script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/caiyun.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% *.cyapi.cn

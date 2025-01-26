@@ -1,5 +1,5 @@
 #!name=定时脚本
-#!desc=Update-2024.11.22
+#!desc=Update-2025.1.27
 
 [Script]
 # > 美团
@@ -32,12 +32,10 @@
 WPS签到 = type=cron,cronexp=30 6 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/wps.js,script-update-interval=0,timeout=120
 # > 吾爱破解
 吾爱破解 = type=cron,cronexp=0 7 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/52pojie.js,script-update-interval=0,timeout=60
-# > Follow
-Follow = type=cron,cronexp=30 7 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/follow/follow.js,script-update-interval=0,timeout=60
 # > 二剪去重
-去重二剪 = type=cron,cronexp=0 8 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/qcej.js,script-update-interval=0,timeout=60
+去重二剪 = type=cron,cronexp=30 7 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/qcej.js,script-update-interval=0,timeout=60
 # > NedeSeek
-NodeSeek = type=cron,cronexp=30 8 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/2b5acc2c4960dd06618c6912302c2c7f/raw/nodeseek.js,script-update-interval=0,timeout=60
+NodeSeek = type=cron,cronexp=0 8 0 * * *,wake-system=1,script-path=https://gist.githubusercontent.com/Sliverkiss/2b5acc2c4960dd06618c6912302c2c7f/raw/nodeseek.js,script-update-interval=0,timeout=60
 # > Boxjs 备份+恢复
 数据备份 = type=cron,cronexp=0 50 23 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/backup.js,script-update-interval=0,timeout=120
 //数据恢复 = type=cron,cronexp=0 55 23 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/dompling/Script/master/gist/restore.js,script-update-interval=0,timeout=120

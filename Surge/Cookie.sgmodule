@@ -1,5 +1,5 @@
 #!name=重写获取
-#!desc=Update-2024.11.22
+#!desc=Update-2025.3.2
 
 [Script]
 # > 美团 app签到获取
@@ -43,6 +43,8 @@ WPS签到 = type=http-request,pattern=^https:\/\/(vip|account)(userinfo|\.wps\.c
 二剪去重 = type=http-request,pattern=^https:\/\/apis\.ddfans\.com\/bian\/public\/index\.php\/water,requires-body=1,script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/qcej.js
 # > NedeSeek web获取
 NodeSeek = type=http-response,pattern=^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/.+\?readme=1&signature=1&phone=1,requires-body=true,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/2b5acc2c4960dd06618c6912302c2c7f/raw/nodeseek.js
+# > 途虎养车 小程序获取
+途虎养车 = type=http-request,pattern=https:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/tuhu.js
 
 [MITM]
-hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, mxsa.mxbc.net, tm-web.pin-dao.cn, m.ctrip.com, api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com, *.wps.cn, www.52pojie.cn, e.dlife.cn, apis.ddfans.com, www.nodeseek.com
+hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, yunbusiness.ccb.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, webapi2.qmai.cn, webapi.qmai.cn, qmwebapi.qmai.cn, mxsa.mxbc.net, tm-web.pin-dao.cn, m.ctrip.com, api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com, *.wps.cn, www.52pojie.cn, e.dlife.cn, apis.ddfans.com, www.nodeseek.com, api.tuhu.cn

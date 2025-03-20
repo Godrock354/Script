@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2024.12.27
+#!desc=Update-2025.3.20
 
 [Header Rewrite]
 # > Bing Ai
@@ -69,9 +69,8 @@ D+评分 = type=http-response,pattern=^https:\/\/disney\.api\.edge\.bamgrid\.com
 脚本转换 = type=http-request, pattern=^https?:\/\/script\.hub\/convert\/, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.beta.js,timeout=300
 # > TikTok 去水印
 下载水印 = type=http-response,pattern=https?:\/\/.*\.tiktokv\.com\/aweme\/v\d\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list|aweme\/favorite),script-update-interval=0,script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/Tiktok.js,requires-body=true,timeout=30,max-size=0
-# > 京东比价
-京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js
-弹窗比价 = type=http-request,pattern=^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js,timeout=60
+# > 京东比价 商品详情页面触发
+京东比价 = type=http-response,pattern=^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js,timeout=30
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, disney.api.edge.bamgrid.com, www.bing.com, biz.cyapi.cn, script.hub, *.script.hub, api.m.jd.com, in.m.jd.com
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, disney.api.edge.bamgrid.com, www.bing.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com

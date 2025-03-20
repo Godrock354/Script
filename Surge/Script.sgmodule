@@ -1,10 +1,6 @@
 #!name=脚本合集
 #!desc=Update-2025.3.20
 
-[Header Rewrite]
-# > Bing Ai
-^https:\/\/www\.bing\.com\/search header-replace User-Agent "Mozilla/5.0 (iphone; Intel Mac OS X 10_12_6) AppleWebKit/537.36 Chrome/110.0 Safari/537.36 Edg/110.0"
-
 [General]
 # > 代理检测
 skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com
@@ -73,4 +69,4 @@ D+评分 = type=http-response,pattern=^https:\/\/disney\.api\.edge\.bamgrid\.com
 京东比价 = type=http-response,pattern=^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,requires-body=1,max-size=0,binary-body-mode=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js,timeout=30
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, disney.api.edge.bamgrid.com, www.bing.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, disney.api.edge.bamgrid.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com

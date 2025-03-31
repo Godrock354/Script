@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2025.3.20
+#!desc=Update-2025.3.31
 
 [General]
 # > 代理检测
@@ -8,6 +8,10 @@ skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com
 force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net, script.hub, *.script.hub
 
 [Rule]
+# > Adobe
+DOMAIN,photos.adobe.io,DIRECT
+DOMAIN,lcs-cops.adobe.io,DIRECT
+DOMAIN-SUFFIX,adobe.io,REJECT
 # > TG 防转圈
 IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve,pre-matching
 # > Applehub 代理

@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2025.4.28
+#!desc=Update-2025.4.29
 
 [General]
 # > 代理检测
@@ -45,6 +45,8 @@ DOMAIN-KEYWORD,vercel.app,Proxy
 http-response ^https:\/\/(.*\.)?kelee\.one(\/.*)? header-add content-disposition inline
 http-response ^https:\/\/(.*\.)?kelee\.one(\/.*)? header-replace content-type "text/plain; charset=utf-8"
 http-request ^https:\/\/(.*\.)?kelee\.one(\/.*)? header-replace User-Agent "Surge iOS/9527"
+# > 解除 Github 429 限制
+http-request (raw|gist).githubusercontent.com header-replace Accept-Language en-us
 
 [Script]
 # > Boxjs
@@ -76,4 +78,4 @@ D+评分 = type=http-response,pattern=^https:\/\/disney\.api\.edge\.bamgrid\.com
 京东比价 = type=http-response,pattern=^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js,requires-body=true,max-size=-1,timeout=60
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, disney.api.edge.bamgrid.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, *.kelee.one, kelee.one
+hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com, sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, ios-*.prod.ftl.netflix.com, ios.prod.ftl.netflix.com, disney.api.edge.bamgrid.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, *.kelee.one, kelee.one, raw.githubusercontent.com, gist.githubusercontent.com

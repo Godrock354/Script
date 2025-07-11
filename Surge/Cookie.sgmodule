@@ -1,15 +1,9 @@
 #!name=重写获取
-#!desc=Update-2025.5.18
+#!desc=Update-2025.7.11
 
 [Script]
 # > 美团 app签到获取
 美团获取 = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js,requires-body=true,type=http-request,pattern=^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/
-# > 百度贴吧 app获取
-贴吧获取 = type=http-request,pattern=^https?:\/\/(c\.tieba\.baidu\.com|180\.97\.\d+\.\d+)\/c\/s\/login,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js
-贴吧获取 = type=http-request,pattern=^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/channelIconConfig,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js
-贴吧获取 = type=http-request,pattern=^https?:\/\/tiebac\.baidu\.com\/c\/u\/follow\/getFoldedMessageUserInfo,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js
-# > 什么值得买 app获取
-什么值买 = type=http-request,pattern=^https?:\/\/user-api\.smzdm\.com\/checkin$,requires-body=false,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js
 # > 喜马拉雅 app获取
 喜马拉雅 = type=http-request,pattern=^https?:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/,requires-body=0,script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js
 # > 阿里云盘 app获取
@@ -36,4 +30,4 @@ WPS签到 = type=http-request,pattern=^https:\/\/(vip|account)(userinfo|\.wps\.c
 NodeSeek = type=http-response,pattern=^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/.+\?readme=1&signature=1&phone=1,requires-body=true,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/2b5acc2c4960dd06618c6912302c2c7f/raw/nodeseek.js
 
 [MITM]
-hostname = %APPEND% i.meituan.com, c.tieba.baidu.com, tiebac.baidu.com, user-api.smzdm.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, m.ctrip.com, api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com, *.wps.cn, www.52pojie.cn, e.dlife.cn, apis.ddfans.com, www.nodeseek.com
+hostname = %APPEND% i.meituan.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, m.ctrip.com, api.wsgw-rewrite.com, mcs-mimp-web.sf-express.com, *.wps.cn, www.52pojie.cn, e.dlife.cn, apis.ddfans.com, www.nodeseek.com

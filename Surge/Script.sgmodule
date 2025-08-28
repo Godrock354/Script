@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2025.7.25
+#!desc=Update-2025.8.28
 
 [General]
 # > 代理检测
@@ -15,12 +15,8 @@ DOMAIN,sign.apphb.cn,Proxy
 # > 小米运动 登录域名
 DOMAIN,api-user.huami.com,Proxy
 DOMAIN,account.huami.com,Proxy
-# > Gemini 美国代理
-DOMAIN,generativelanguage.googleapis.com,United States
 # > Jsbox Erots 商店代理
 DOMAIN,lc.liuguogy.com,Proxy
-# > Bard 代理
-DOMAIN,bard.google.com,United States
 # > Safari 防跳转
 DOMAIN,app-site-association.cdn-apple.com,REJECT
 # > Nexitally 直连

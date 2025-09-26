@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2025.8.30
+#!desc=Update-2025.9.26
 
 [General]
 # > 代理检测
@@ -10,8 +10,6 @@ force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.ne
 [Rule]
 # > TG 防转圈
 IP-CIDR,95.161.76.100/31,REJECT-NO-DROP,no-resolve,pre-matching
-# > Applehub 代理
-DOMAIN,sign.apphb.cn,Proxy
 # > 小米运动 登录域名
 DOMAIN,api-user.huami.com,Proxy
 DOMAIN,account.huami.com,Proxy
@@ -19,18 +17,12 @@ DOMAIN,account.huami.com,Proxy
 DOMAIN,lc.liuguogy.com,Proxy
 # > Safari 防跳转
 DOMAIN,app-site-association.cdn-apple.com,REJECT
-# > Nexitally 直连
-DOMAIN-KEYWORD,ehffou.xyz,DIRECT
 # > Boxjs 代理
 DOMAIN-KEYWORD,jsdelivr.net,Proxy
 DOMAIN-KEYWORD,i.pinimg.com,Proxy
 DOMAIN-KEYWORD,64.media.tumblr.com,Proxy
 # > Sub-Store 代理
 DOMAIN-KEYWORD,vercel.app,Proxy
-
-[Header Rewrite]
-# > 解除 Github 429 限制
-http-request ^https://.*\.githubusercontent\.com\/ header-replace Accept-Language en-us
 
 [Script]
 # > Boxjs

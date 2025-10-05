@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2025.9.26
+#!desc=Update-2025.10.5
 
 [General]
 # > 代理检测
@@ -39,13 +39,15 @@ EmbyPro = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/r
 # > 彩云天气 解锁
 彩云天气 = type=http-response,pattern=^https?:\/\/(ad|biz|wrapper|api|starplucker)\.cyapi\.cn\/.*$,requires-body=true,max-size=-1,script-path=https://github.com/ddgksf2013/Scripts/raw/master/caiyun_json.js
 # > Script-hub 解析转换
-前端配置 = type=http-request, pattern=^https?:\/\/script\.hub\/($|edit\/|reload), script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-hub.beta.js,timeout=300
-重写转换 = type=http-request, pattern=^https?:\/\/script\.hub\/file\/_start_\/.+type=(?:qx-rewrite|surge-module|loon-plugin|all-module), script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/Rewrite-Parser.beta.js,timeout=300
-规则转换 = type=http-request, pattern=^https?:\/\/script\.hub\/file\/_start_\/.+type=rule-set, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/rule-parser.beta.js,timeout=300
-脚本转换 = type=http-request, pattern=^https?:\/\/script\.hub\/convert\/, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.beta.js,timeout=300
+前端配置 = type=http-request,pattern=^https?:\/\/script\.hub\/($|edit\/|reload),script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-hub.beta.js,timeout=300
+重写转换 = type=http-request,pattern=^https?:\/\/script\.hub\/file\/_start_\/.+type=(?:qx-rewrite|surge-module|loon-plugin|all-module),script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/Rewrite-Parser.beta.js,timeout=300
+规则转换 = type=http-request,pattern=^https?:\/\/script\.hub\/file\/_start_\/.+type=rule-set,script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/rule-parser.beta.js,timeout=300
+脚本转换 = type=http-request,pattern=^https?:\/\/script\.hub\/convert\/,script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/script-converter.beta.js,timeout=300
 # > 京东比价 商品详情页面触发
 慢慢买CK = type=http-request,pattern=^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js,requires-body=true,max-size=-1,timeout=60
 京东比价 = type=http-response,pattern=^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js,requires-body=true,max-size=-1,timeout=60
+# > Sora去水印@ddgksf2013
+SoraRemoveWatermark = type=http-request,pattern=^https?:\/\/videos\.openai\.com\/vg-assets\/assets.*mp4,script-path=https://gist.githubusercontent.com/ddgksf2013/71fca841d34a7b440408276d03da3261/raw/SoraRemoveWatermark.js,timeout=60
 
 [MITM]
-hostname = %APPEND% sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com
+hostname = %APPEND% sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, videos.openai.com

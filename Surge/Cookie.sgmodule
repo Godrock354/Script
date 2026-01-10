@@ -27,10 +27,6 @@ WPS签到 = type=http-request,pattern=^https:\/\/(vip|account)(userinfo|\.wps\.c
 二剪去重 = type=http-request,pattern=^https:\/\/apis\.ddfans\.com\/bian\/public\/index\.php\/water,requires-body=1,script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/qcej.js
 # > NedeSeek web获取
 NodeSeek = type=http-response,pattern=^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/.+\?readme=1&signature=1&phone=1,requires-body=true,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/2b5acc2c4960dd06618c6912302c2c7f/raw/nodeseek.js
-# > 黄白助手 自定义点歌 https://wyydg.com?name= 
-# > 试听问题需要 vip cookie （我的，下拉刷新抓取）
-wyyGetCookie = type=http-request,pattern=https://interface3.music.163.com/eapi/vipauth/app/memberlogo/mypage/query,requires-body=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/wyyGetCookie.js
-wyydg = type=http-request,pattern=wyydg.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/wyydg.js
 
 [MITM]
-hostname = %APPEND% i.meituan.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, m.ctrip.com, api.wsgw-rewrite.com, *.wps.cn, www.52pojie.cn, e.dlife.cn, apis.ddfans.com, www.nodeseek.com, wyydg.com, interface3.music.163.com
+hostname = %APPEND% i.meituan.com, xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, m.ctrip.com, api.wsgw-rewrite.com, *.wps.cn, www.52pojie.cn, e.dlife.cn, apis.ddfans.com, www.nodeseek.com

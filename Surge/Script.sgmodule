@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2025.12.11
+#!desc=Update-2026.1.10
 
 [General]
 # > 代理检测
@@ -44,6 +44,10 @@ EmbyPro = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/r
 # > 京东比价 商品详情页面触发
 慢慢买CK = type=http-request,pattern=^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js,requires-body=true,max-size=-1,timeout=60
 京东比价 = type=http-response,pattern=^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price1.js,requires-body=true,max-size=-1,timeout=60
+# > 黄白助手 自定义点歌 https://wyydg.com?name= 
+# > 试听问题需要 vip cookie （我的，下拉刷新抓取）
+wyyGetCookie = type=http-request,pattern=https://interface3.music.163.com/eapi/vipauth/app/memberlogo/mypage/query,requires-body=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/wyyGetCookie.js
+wyydg = type=http-request,pattern=wyydg.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/wyydg.js
 
 [MITM]
-hostname = %APPEND% sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com
+hostname = %APPEND% sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, wyydg.com, interface3.music.163.com

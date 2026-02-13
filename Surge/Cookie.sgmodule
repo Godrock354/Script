@@ -1,5 +1,5 @@
 #!name=重写获取
-#!desc=Update-2026.1.31
+#!desc=Update-2026.2.13
 
 [Script]
 # > 喜马拉雅 app获取
@@ -10,8 +10,6 @@
 哔哩哔哩 = type=http-request,pattern=^https?:\/\/(app\.bilibili\.com\/x\/resource\/fingerprint\?|m\.bilibili\.com\/$),requires-body=0,script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js,script-update-interval=0
 # > 捷停车 app获取
 捷顺停车 = type=http-request,pattern=^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js
-# > 携程旅行 小程序获取
-携程旅行 = type=http-response,pattern=^https:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/[a-zA-Z]+Login(?:$|\?),requires-body=1,max-size=0,debug=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Ctrip-DailyBonus/Ctrip.js
 # > 网上国网 小组件获取
 网上国网 = type=http-request,pattern=^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all,requires-body=true,max-size=-1,timeout=60,script-path=https://raw.githubusercontent.com/dompling/Script/master/wsgw/index.js
 # > WPS签到 https://vip.wps.cn/home获取
@@ -27,4 +25,4 @@ WPS签到 = type=http-request,pattern=^https:\/\/(vip|account)(userinfo|\.wps\.c
 NodeSeek = type=http-response,pattern=^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/.+\?readme=1&signature=1&phone=1,requires-body=true,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/2b5acc2c4960dd06618c6912302c2c7f/raw/nodeseek.js
 
 [MITM]
-hostname = %APPEND% xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, m.ctrip.com, api.wsgw-rewrite.com, *.wps.cn, www.52pojie.cn, e.dlife.cn, apis.ddfans.com, www.nodeseek.com
+hostname = %APPEND% xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, api.wsgw-rewrite.com, *.wps.cn, www.52pojie.cn, e.dlife.cn, apis.ddfans.com, www.nodeseek.com

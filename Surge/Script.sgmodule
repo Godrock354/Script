@@ -15,8 +15,6 @@ DOMAIN,account.huami.com,Proxy
 DOMAIN,lc.liuguogy.com,Proxy
 # > Safari 防跳转
 DOMAIN,app-site-association.cdn-apple.com,REJECT
-# > Nexitally 直连
-DOMAIN-KEYWORD,nxonearth.com,DIRECT
 # > Boxjs 代理
 DOMAIN-KEYWORD,jsdelivr.net,Proxy
 DOMAIN-KEYWORD,i.pinimg.com,Proxy

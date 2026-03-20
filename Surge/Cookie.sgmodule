@@ -1,5 +1,5 @@
 #!name=重写获取
-#!desc=Update-2026.2.13
+#!desc=Update-2026.3.20
 
 [Script]
 # > 喜马拉雅 app获取
@@ -19,10 +19,8 @@ WPS签到 = type=http-request,pattern=^https:\/\/(vip|account)(userinfo|\.wps\.c
 # > 中国电信 https://e.dlife.cn/index.do获取
 电信组件 = type=http-request,pattern=^https:\/\/e\.dlife\.cn\/user\/loginMiddle,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/dompling/Script/master/10000/index.js,script-update-interval=0
 电信组件 = type=http-request,pattern=^https:\/\/(e\.dlife\.cn|open\.e\.189\.cn\/api).*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Godrock354/Script/refs/heads/main/JavaScript/Surge/Log.js,script-update-interval=0
-# > 二剪去重 小程序获取
-二剪去重 = type=http-request,pattern=^https:\/\/apis\.ddfans\.com\/bian\/public\/index\.php\/water,requires-body=1,script-path=https://raw.githubusercontent.com/Former-Years/Surge/refs/heads/main/Script/qcej.js
 # > NedeSeek web获取
 NodeSeek = type=http-response,pattern=^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/.+\?readme=1&signature=1&phone=1,requires-body=true,timeout=60,script-path=https://gist.githubusercontent.com/Sliverkiss/2b5acc2c4960dd06618c6912302c2c7f/raw/nodeseek.js
 
 [MITM]
-hostname = %APPEND% xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, api.wsgw-rewrite.com, *.wps.cn, www.52pojie.cn, e.dlife.cn, apis.ddfans.com, www.nodeseek.com
+hostname = %APPEND% xmc.ximalaya.com, 180.153.255.*, 180.153.255.10*, 180.153.250.*, 114.80.99.*, 1.62.62.64, auth.alipan.com, auth.aliyundrive.com, app.bilibili.com, m.bilibili.com, sytgate.jslife.com.cn, api.wsgw-rewrite.com, *.wps.cn, www.52pojie.cn, e.dlife.cn, www.nodeseek.com

@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2026.5.1
+#!desc=Update-2026.5.2
 
 [General]
 # > 代理检测
@@ -10,6 +10,17 @@ force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.ne
 [Rule]
 # > Apple通知 代理
 DOMAIN-SUFFIX,push.apple.com,Proxy
+# IPv4
+IP-CIDR,17.249.0.0/16,Proxy,no-resolve
+IP-CIDR,17.252.0.0/16,Proxy,no-resolve
+IP-CIDR,17.57.144.0/22,Proxy,no-resolve
+IP-CIDR,17.188.128.0/18,Proxy,no-resolve
+IP-CIDR,17.188.20.0/23,Proxy,no-resolve
+# IPv6
+IP-CIDR6,2620:149:a44::/48,Proxy,no-resolve
+IP-CIDR6,2403:300:a42::/48,Proxy,no-resolve
+IP-CIDR6,2403:300:a51::/48,Proxy,no-resolve
+IP-CIDR6,2a01:b740:a42::/48,Proxy,no-resolve
 # > 小米运动 登录域名
 DOMAIN,api-user.huami.com,Proxy
 DOMAIN,account.huami.com,Proxy

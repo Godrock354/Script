@@ -21,6 +21,10 @@
         {
             "name":"Texon",
             "url":"https://raw.githubusercontent.com/Godrock354/Script/refs/heads/main/Icon/Emby/Texon.png"
-        }  
+        },
+        {
+            "name":"ZhiPianRen",
+            "url":"https://raw.githubusercontent.com/Godrock354/Script/refs/heads/main/Icon/Emby/ZhiPianRen.png"
+        }
     ]
 }

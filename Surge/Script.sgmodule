@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2026.7.9
+#!desc=Update-2026.8.25
 
 [General]
 # > 代理检测
@@ -58,4 +58,4 @@ EmbyPro = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/r
 网上国网 = type=http-request,pattern=^https?:\/\/api\.wsgw-rewrite\.com\/electricity\/bill\/all,requires-body=true,max-size=-1,timeout=60,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/95598/95598.js
 
 [MITM]
-hostname = %APPEND% sub.store, ap*.intsig.net, boxjs.net, boxjs.com, mb3admin.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, api.wsgw-rewrite.com
+hostname = %APPEND% sub.store, ap*.intsig.net, boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net, mb3admin.com, biz.cyapi.cn, script.hub, *.script.hub, in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com, api.wsgw-rewrite.com

@@ -1,5 +1,5 @@
 #!name=脚本合集
-#!desc=Update-2026.8.25
+#!desc=Update-2026.10.3
 
 [General]
 # > 代理检测
@@ -8,6 +8,10 @@ skip-proxy = %APPEND% www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com
 force-http-engine-hosts = %APPEND% boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net, script.hub, *.script.hub
 
 [Rule]
+# > Muse 分流
+DOMAIN-SUFFIX,muse.ai,AITools
+DOMAIN-SUFFIX,museai.com,AITools
+DOMAIN-SUFFIX,ecto1.ai,AITools
 # > Apple通知 代理
 DOMAIN-SUFFIX,push.apple.com,Proxy
 DOMAIN-SUFFIX,akadns.net,Proxy
